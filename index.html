@@ -89,12 +89,17 @@
       margin-bottom: 10px;
     }
 
-    .photos img {
-      max-width: 45%;
-      height: auto;
-      margin: 10px 5px;
+    .photo-grid {
+      column-count: 2;
+      column-gap: 10px;
+    }
+
+    .photo-grid img {
+      width: 100%;
+      margin: 0 0 10px;
       border-radius: 10px;
       border: 2px solid #28a745;
+      display: block;
     }
 
     .footer {
@@ -124,8 +129,12 @@
   </div>
   <div class="photos">
     <h2>Fotos del Comedor Infantil</h2>
-    <img src="./chicos.jpeg" alt="Niños en el comedor 1">
-    <img src="./cocinando.jpeg" alt="Niños en el comedor 2">
+    <div class="photo-grid">
+      <img src="./cocinando.jpeg" alt="Niños en el comedor 2">
+      <img src="./chicos.jpeg" alt="Niños en el comedor 1">
+      <img src="./chicos.jpeg" alt="Niños en el comedor 1">
+      <img src="./cocinando.jpeg" alt="Niños en el comedor 2">
+    </div>
   </div>
   <div class="footer">Gracias por ser parte de esta causa solidaria. 🎅</div>
 </body>
